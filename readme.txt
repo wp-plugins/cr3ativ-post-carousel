@@ -1,8 +1,9 @@
 === Cr3ativ RecentPosts Carousel ===
-Contributors: Jonathan Atkinson
-Tags: 
-Requires at least: 3.5
-Tested up to: 3.8.1
+Contributors: Cr3ativ
+Tags: carousel, recent posts
+Requires at least: 3.0.1
+Tested up to: 4.0
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -51,10 +52,17 @@ Styling for these page templates are included in the includes directory under :
 
 == Changelog ==
 
-= 1.0 =
-* First release.
+= 1.0.3 =
+* Updated plugin readme.txt and version # on cr3ativ-recentposts.php and added banners to /assets directory.
 
-== Upgrade Notice ==
+= 1.0.2 =
+* Updated plugin so when the shortcode is used, the excerpt is wrapped in p tags to pick up the format.
 
 = 1.0.1 =
 * Updated plugin to include ability to choose ‘All’ from the widget category drop down or to leave the category selection off the short code to pull all categories and updated the language files.
+
+= 1.0 =
+* First release.
+
+
+
