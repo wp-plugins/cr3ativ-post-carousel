@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Cr3ativ RecentPosts Plugin
- * Plugin URI: http://cr3ativ.com/cr3ativportfolio/post-carousel
+ * Plugin URI: https://wordpress.org/plugins/cr3ativ-post-carousel/
  * Description: Custom written plugin to have your posts in a carousel based on categories from WordPress.
- * Author: Jonathan Atkinson
+ * Author: Cr3ativ
  * Author URI: http://cr3ativ.com/
- * Version: 1.0.2
+ * Version: 1.0.3
  */
 
 /* Place custom code below this line. */
