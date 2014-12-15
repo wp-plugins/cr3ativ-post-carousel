@@ -5,7 +5,7 @@
  * Description: Custom written plugin to have your posts in a carousel based on categories from WordPress.
  * Author: Cr3ativ
  * Author URI: http://cr3ativ.com/
- * Version: 1.0.3
+ * Version: 1.0.4
  */
 
 /* Place custom code below this line. */
@@ -49,6 +49,20 @@ load_plugin_textdomain ('cr3atrecentposts');
 //////////////////////       Shortcode Loop      ///////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
+function get_excerpt_by_id($post_id){
+$the_post = get_post($post_id); //Gets post ID
+$the_excerpt = $the_post->post_content; //Gets post_content to be used as a basis for the excerpt
+$excerpt_length = 35; //Sets excerpt length by word count
+$the_excerpt = strip_tags(strip_shortcodes($the_excerpt)); //Strips tags and images
+$words = explode(' ', $the_excerpt, $excerpt_length + 1);
+if(count($words) > $excerpt_length) :
+array_pop($words);
+array_push($words, '…');
+$the_excerpt = implode(' ', $words);
+endif;
+$the_excerpt = '<p>' . $the_excerpt . '</p>';
+return $the_excerpt;
+}
 
 // Taxonomy category shortcode
 function recentposts_cat_func($atts, $content) {
@@ -94,7 +108,7 @@ function recentposts_cat_func($atts, $content) {
     if (have_posts($args)) : while (have_posts()) : the_post();
         $temp_title = get_the_title($post->ID);
         $temp_link = get_permalink($post->ID);
-        $temp_excerpt = get_the_excerpt($post->ID);
+        $temp_excerpt = get_excerpt_by_id($post_id);
         $temp_image = get_the_post_thumbnail($post->ID, 'full');
      if( $image == 'yes' ) {
         $output .= '<div><a href="'.$temp_link.'">'.$temp_image.'</a><h2 class="recentposts_carousel"><a href="'.$temp_link.'">'.$temp_title.'</a></h2><p>'.$temp_excerpt.'</p></div>';
