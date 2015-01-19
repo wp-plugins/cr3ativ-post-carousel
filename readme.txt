@@ -52,6 +52,9 @@ Styling for these page templates are included in the includes directory under :
 
 == Changelog ==
 
+= 1.0.6 =
+* Updated to include missing images from CSS file.
+
 = 1.0.5 =
 * Updated to combine all 3 CSS files into one for quicker loading on CSS file.
 
