@@ -5,7 +5,7 @@
  * Description: Custom written plugin to have your posts in a carousel based on categories from WordPress.
  * Author: Cr3ativ
  * Author URI: http://cr3ativ.com/
- * Version: 1.0.4
+ * Version: 1.0.5
  */
 
 /* Place custom code below this line. */
@@ -18,9 +18,7 @@ $ja_creativ_recentposts_path = dirname(__FILE__);
 /* Add css and scripts file */
 function creativ_recentposts_add_scripts() {
 	global $ja_cr3ativ_recentposts_directory, $ja_creativ_recentposts_path;
-		wp_enqueue_style('creativ_recentposts_styles', $ja_cr3ativ_recentposts_directory.'css/owl.carousel.css');
-        wp_enqueue_style('creativ_recentposts_transitions', $ja_cr3ativ_recentposts_directory.'css/owl.transitions.css');
-        wp_enqueue_style('creativ_recentposts_theme', $ja_cr3ativ_recentposts_directory.'css/owl.theme.css');
+		wp_enqueue_style('creativ_recentposts_styles', $ja_cr3ativ_recentposts_directory.'css/owl.css');
 		wp_enqueue_script('jquery');
 		wp_register_script('creativ_recentposts_js', $ja_cr3ativ_recentposts_directory.'js/owl.carousel.js', 'jquery');
 		wp_register_script('creativ_recentposts_script_js', $ja_cr3ativ_recentposts_directory.'js/owl.script.js', 'jquery');

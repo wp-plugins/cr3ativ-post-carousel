@@ -3,7 +3,7 @@ Contributors: Cr3ativ
 Tags: carousel, recent posts
 Requires at least: 3.0.1
 Tested up to: 4.0
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -51,6 +51,9 @@ Styling for these page templates are included in the includes directory under :
 
 
 == Changelog ==
+
+= 1.0.5 =
+* Updated to combine all 3 CSS files into one for quicker loading on CSS file.
 
 = 1.0.4 =
 * Updated plugin readme.txt and version # on cr3ativ-recentposts.php and updated the text based short code, one of the functions was deprecated.
