@@ -5,7 +5,7 @@
  * Description: Custom written plugin to have your posts in a carousel based on categories from WordPress.
  * Author: Cr3ativ
  * Author URI: http://cr3ativ.com/
- * Version: 1.0.7
+ * Version: 1.0.8
  */
 
 /* Place custom code below this line. */
@@ -106,7 +106,7 @@ function recentposts_cat_func($atts, $content) {
     if (have_posts($args)) : while (have_posts()) : the_post();
         $temp_title = get_the_title($post->ID);
         $temp_link = get_permalink($post->ID);
-        $temp_excerpt = get_excerpt_by_id($post_id);
+        $temp_excerpt = get_excerpt_by_id($post->ID);
         $temp_image = get_the_post_thumbnail($post->ID, 'full');
      if( $image == 'yes' ) {
         $output .= '<div><a href="'.$temp_link.'">'.$temp_image.'</a><h2 class="recentposts_carousel"><a href="'.$temp_link.'">'.$temp_title.'</a></h2><p>'.$temp_excerpt.'</p></div>';
