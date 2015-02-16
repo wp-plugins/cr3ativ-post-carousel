@@ -5,7 +5,7 @@
  * Description: Custom written plugin to have your posts in a carousel based on categories from WordPress.
  * Author: Cr3ativ
  * Author URI: http://cr3ativ.com/
- * Version: 1.0.6
+ * Version: 1.0.7
  */
 
 /* Place custom code below this line. */
