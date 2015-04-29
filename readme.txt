@@ -2,8 +2,8 @@
 Contributors: Cr3ativ
 Tags: carousel, recent posts
 Requires at least: 3.0.1
-Tested up to: 4.0
-Stable tag: 1.0.8
+Tested up to: 4.2
+Stable tag: 1.0.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -51,6 +51,9 @@ Styling for these page templates are included in the includes directory under :
 
 
 == Changelog ==
+
+= 1.0.9 =
+* Updated still receiving a 404 on the css file.
 
 = 1.0.7 =
 * Updated cr3ativ-recentposts.php and css stylesheet to group all stylesheets into 1 call and remove the 404 error on page load (in script).
