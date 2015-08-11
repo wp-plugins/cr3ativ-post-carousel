@@ -4,7 +4,7 @@ class cr3ativ_recentposts_carousel extends WP_Widget {
 
 	// constructor
 	function cr3ativ_recentposts_carousel() {
-        parent::WP_Widget(false, $name = __('RecentPosts Carousel Loop', 'cr3atrecentposts') );
+        parent::__construct(false, $name = __('RecentPosts Carousel Loop', 'cr3atrecentposts') );
     }
 
 	// widget form creation
